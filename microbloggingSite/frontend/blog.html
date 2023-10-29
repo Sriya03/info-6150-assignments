@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blogs</title>
+        <link rel="stylesheet" href="../dist/blog.css">
+    </head>
+    <body>
+        <h1>Welcome to the Blogs Site</h1>
+        <button id="create-button">Create Blog</button>
+       <div id="create-blog-form" class="hidden">
+        <div id="addForm">
+            <input id="title" type="text" placeholder="Title" required><br>
+            <input id="author" type="text" placeholder="Author" required><br>
+            <textarea name="content" id="content" placeholder="Content"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+       </div>
+        <div id="displayBlogs">
+        </div>
+        <script src="blogs.js"></script>
+    </body>
+</html>

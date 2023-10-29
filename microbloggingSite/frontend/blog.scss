@@ -1,0 +1,135 @@
+// To style common buttons
+@mixin buttonStyle{
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #8e44ad;
+    }
+}
+
+// Entire body style
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f5f8;
+    color: #394240;
+    h1{
+        text-align: center;
+    }
+}
+
+//For adding new Blog button
+#create-button{
+    @include buttonStyle();
+}
+
+//Fields required to add new Blog
+#create-blog-form{
+    #addForm{
+        margin-top: 20px;
+        width: 50%;
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #f9f2f2;
+            border-radius: 3px;
+            box-sizing: border-box;
+        };
+        button{
+            @include buttonStyle();
+        }
+    
+    }
+}
+
+// To hide and show create form
+.hidden{
+    display: none;
+}
+
+// To expand blogs
+.expanded{
+    height: 130px;
+    overflow: hidden;
+}
+
+.updateButton{
+    width: auto;
+    float: right;
+}
+
+#displayBlogs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1400px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #fcfcfc;
+    }
+}
+
+.blog-card{
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(43, 43, 43, 0.1);
+    width: 400px;
+    &:hover {
+        background-color: #f0f3f5;
+    }
+    h1 {
+        color: #e74c3c;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    p {
+        margin-bottom: 10px;
+        color: #3498db;
+    }
+
+    h4 {
+        color: #777;
+    }
+    :nth-child(3n) {
+        margin-right: 0;
+      }
+    :nth-child(3n + 1) {
+        margin-left: 0;
+      }
+    .updateButton{
+        background-color: #f39c12;
+        color: #fff;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #2980b9;
+        }
+    }
+    &.updating{
+        height: auto ;
+    }
+}
