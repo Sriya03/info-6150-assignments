@@ -4,8 +4,7 @@ This repository contains my assignments for the Web Design and User Experience c
 
 ## Assignments
 
-1. Assignment 1: [Description or link]
-2. Assignment 2: [Description or link]
+1. Assignment 1: Created a microBlogging website
 
 ## How to Use
 
